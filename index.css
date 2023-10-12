@@ -35,7 +35,7 @@ h1 {
   font-size: 4rem;
 }
 h2 {
-  font-weight: 500;
+  font-weight: 600;
   font-size: 2.5rem;
 }
 h3 {
@@ -63,7 +63,7 @@ h4 {
 /* SPECIFIC ELEMENTS */
 
 .container {
-  max-width: 1540px;
+  max-width: 1541px;
   margin: 0 auto;
   position: relative;
   padding: 9rem 2rem;
@@ -81,7 +81,7 @@ h4 {
 .logo {
   /* float: left; */
   gap: 13px;
-  margin-right: 0px;
+  margin-right: 3.46rem;
   flex-shrink: 0;
 }
 
@@ -90,6 +90,8 @@ h4 {
 }
 
 .logo .logo-m {
+  width: 184.435px;
+  height: 40.84px;
   display: block;
 }
 
@@ -98,27 +100,27 @@ header .container {
   align-items: center;
   /* justify-content: space-between; */
   position: relative;
-  padding-block: 2.5rem;
+  padding-block: 2.7rem;
 }
 
 header .nav-menu {
   display: none;
   order: 3;
   position: absolute;
-  margin-left: 4rem;
 }
 
 header .nav-menu ul {
   display: flex;
-  gap: 1rem;
   align-items: center;
 }
 
-header .nav-menu button::after {
-  /* vertical-align: 10%; */
-  position: absolute;
+header .nav-menu button {
+  margin-right: 3.12rem;
+}
 
-  right: -1rem;
+header .nav-menu button::after {
+  position: absolute;
+  right: -1.2rem;
   top: -0.1rem;
   content: url(./assets/images/arrow\ 1.svg);
 }
@@ -126,8 +128,11 @@ header .nav-menu button::after {
 header .nav-menu button,
 header .nav-menu a {
   color: #0d0f11;
-  margin-right: 1.8rem;
   position: relative;
+}
+
+header .nav-menu a {
+  margin-right: 1.95rem;
 }
 
 header .button-menu {
@@ -141,7 +146,7 @@ header .button-menu .button-solid-green {
 header .button-menu ul {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 1.32rem;
 }
 
 header .mobile-nav-button {
@@ -221,7 +226,7 @@ header .button-menu li:not(.mobile-nav-button) {
   flex-direction: column;
   align-items: center;
   gap: 9rem;
-  padding-top: 4.5rem;
+  padding-top: 5.5rem;
   padding-bottom: 2.5rem;
 }
 
@@ -229,6 +234,8 @@ header .button-menu li:not(.mobile-nav-button) {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  gap: 2.5rem;
 }
 
 .story-section .story-text {
@@ -243,7 +250,9 @@ header .button-menu li:not(.mobile-nav-button) {
 }
 
 .story-section .button-solid-green {
-  padding-inline: 2rem;
+  padding: 0.6rem 2rem;
+  font-weight: 500;
+  font-size: 1.125rem;
 }
 
 .story-section .companies {
@@ -251,6 +260,7 @@ header .button-menu li:not(.mobile-nav-button) {
   gap: 3.5rem;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
 }
 
 /* testimonial  */
@@ -258,7 +268,9 @@ header .button-menu li:not(.mobile-nav-button) {
 .testimonial-section .container {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 5rem;
+  padding-block: 7rem;
 }
 
 .testimonial-section .testimonial-link-side {
@@ -266,8 +278,12 @@ header .button-menu li:not(.mobile-nav-button) {
   align-items: center;
   flex-direction: column;
   text-align: center;
-  gap: 2rem;
+  gap: 1.5rem;
   flex-basis: 115%;
+}
+
+.testimonial-section .testimonial-link-side a {
+  font-size: 1.125rem;
 }
 
 .testimonial-section .testimonial-highlight-side {
@@ -276,15 +292,17 @@ header .button-menu li:not(.mobile-nav-button) {
   align-items: center;
   flex-direction: column;
   font-size: 1rem;
+  /* padding: ; */
 }
 
 .testimonial-section .testimonial-logos {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
   flex-wrap: wrap;
+}
 
-  gap: 1rem;
+.testimonial-section .testimonial-logos * {
+  padding: 1rem 2rem;
 }
 
 .testimonial-section .testimonial-img {
@@ -305,8 +323,9 @@ header .button-menu li:not(.mobile-nav-button) {
   flex-direction: column;
   gap: 1rem;
   position: relative;
-
-  margin-top: 5rem;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  /* margin-top: 5rem; */
 }
 
 @media (min-width: 800px) and (max-width: 1300px) {
@@ -331,17 +350,12 @@ header .button-menu li:not(.mobile-nav-button) {
     flex-direction: row;
   }
 
-  .testimonial-content {
-    margin-left: 6rem;
-    padding-left: 9rem !important;
-  }
-
   .testimonial-content .testimonial-img {
     width: auto;
     height: auto;
     top: 0;
     left: 0;
-    transform: translate(-50%, -45%);
+    transform: translate(-53%, -40%);
   }
 
   .testimonial-section .testimonial-link-side {
@@ -349,12 +363,19 @@ header .button-menu li:not(.mobile-nav-button) {
     text-align: left;
   }
 
+  .testimonial-section .testimonial-link-side h2 {
+    font-weight: 600;
+  }
+
   .testimonial-section .testimonial-link-side a {
-    font-size: 0.88rem;
+    font-size: 1.125rem;
   }
 
   .testimonial-highlight-side .testimonial-content {
     font-size: 1.5rem;
+    margin-left: 6rem;
+    padding-block: 2.5rem;
+    padding-left: 8.37rem !important;
   }
 
   .testimonial-highlight-side .testimonial-logos {
@@ -365,14 +386,20 @@ header .button-menu li:not(.mobile-nav-button) {
 
 /* tags */
 
+.tag-section .container {
+  padding-block: 5rem;
+}
+
 .tag-section h2 {
   text-align: center;
 }
 
 .tags {
+  display: flex;
   justify-content: center;
   flex-wrap: wrap;
   max-width: 60rem;
+  /* row-gap: 0rem; */
   gap: 1rem;
   font-size: 1rem;
 }
@@ -386,7 +413,8 @@ header .button-menu li:not(.mobile-nav-button) {
 
 @media (min-width: 1350px) {
   .tags {
-    gap: 2rem;
+    row-gap: 1.48rem;
+    column-gap: 2rem;
     font-size: 1.6125rem;
   }
 }
@@ -405,7 +433,7 @@ header .button-menu li:not(.mobile-nav-button) {
 
   display: flex;
   align-items: flex-start;
-  gap: 2rem;
+  gap: 4rem;
   flex-direction: column;
 }
 
@@ -416,6 +444,12 @@ header .button-menu li:not(.mobile-nav-button) {
 .article-section .source {
   display: flex;
   gap: 0.5rem;
+}
+
+.article-section .article {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .article-section .article img {
@@ -438,7 +472,7 @@ header .button-menu li:not(.mobile-nav-button) {
     align-items: center;
   }
   .article-section .article-highlighted .article-preview {
-    max-width: 450px;
+    max-width: 50%;
   }
 }
 
@@ -590,17 +624,17 @@ header .button-menu li:not(.mobile-nav-button) {
 
 .button-solid-green {
   color: white;
-  padding: 0.6rem 1.1rem;
+  padding: 0.7rem 1.05rem;
   border-radius: 0.41169rem;
   background: var(--green);
-  border: 0.083rem solid var(--green);
+  border: 1.317px solid #2bb673;
 }
 
 .button-outlined-green {
   color: var(--green);
-  padding: 0.6rem 1.1rem;
+  padding: 0.7rem 1.05rem;
   border-radius: 0.41169rem;
-  border: 0.083rem solid var(--green);
+  border: 1.317px solid #2bb673;
 }
 
 .button-outlined-white {
@@ -612,7 +646,7 @@ header .button-menu li:not(.mobile-nav-button) {
 
 .button-outlined-blue {
   color: var(--blue);
-  padding: 0.5rem 1rem;
+  padding: 0.31rem 1.25rem;
   border-radius: 0.83194rem;
   border: 0.2rem solid var(--blue-transparent);
 }
